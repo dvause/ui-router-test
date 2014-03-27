@@ -1,4 +1,4 @@
-angular.module('ui-router-test.controller', [])
+angular.module('ui-router-test.controller', ['ui.router'])
 
 
 	.config(function($stateProvider) {

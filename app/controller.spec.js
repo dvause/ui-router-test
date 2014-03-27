@@ -4,10 +4,8 @@ describe("Controller: ui-router-test.controller", function() {
 	var scope;
 	var httpBackend;
 
-	beforeEach(module("ui-router-test.controller", function($provide) {
-		$provide.value('$stateProvider', {});
-	}));
-	beforeEach(inject(function($controller, $rootScope, _$httpBackend_, $provide) {
+	beforeEach(module("ui-router-test.controller"));
+	beforeEach(inject(function($controller, $rootScope, _$httpBackend_) {
 		stateParams = {urlStateParam: 'foo', myState: 'bar'};
 		httpBackend = _$httpBackend_;
 		scope = $rootScope.$new();
